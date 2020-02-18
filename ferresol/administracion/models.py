@@ -6,10 +6,16 @@ class Producto(models.Model):
 
     #atributos propios
     nombre = models.CharField(max_length=45, blank=True, default='')
-    precio = models.IntegerField()
+    precio = models.IntegerField(blank=True,null=True)
     tipo = models.CharField(max_length=45, blank=True, default='')
-    stock = models.IntegerField()
+    stock = models.IntegerField(blank=True,null=True)
+    imagen = models.ImageField(upload_to='administracion/imagenes',blank=True,null=True)
 
+    #atributos foraneos
+    id_producto = models.ForeignKey('self',on_delete=True,null=True,blank=True)
+
+    def __str__(self):
+        return self.nombre
 
 class Cotizacion(models.Model):
 
@@ -38,3 +44,4 @@ class OrdenDeCompra(models.Model):
     provincia= models.CharField(max_length=45, blank=True, default='')
     departamento = models.CharField(max_length=45, blank=True, default='')
     nombre_comprador= models.CharField(max_length=45, blank=True, default='')
+
