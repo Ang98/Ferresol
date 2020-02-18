@@ -1,0 +1,115 @@
+:root {
+    --verde: #00b30c;
+    --gris1: #353537;
+    --gris2: #eaeaeb;
+    --gris3: #777777;
+}
+h1,h2,h3{
+    font-family:'Raleway',sans-serif;
+    font-weight:700!important;
+}
+.buscador .titulo{
+    font-weight: 600;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+
+.categorianew{
+    color:rgb(199, 76, 31);
+    font-size:1.2rem;
+    font-family:'Lato',sans-serif;
+}
+
+.vercategoria{
+    background-color: rgb(82, 4, 85);
+    text-align: center;
+    color: #eaeaeb;
+}
+
+.verempresa{
+    background-color: aqua;
+    text-align: center;
+    color: rgb(4, 4, 68);
+}
+
+.logotipo{
+    width:80px;
+    height:80px;
+    left:0px;
+    margin: 0px;
+    border:none;
+}
+
+.boton{
+        cursor: pointer;
+        height: 66px;
+        width: 136px;
+        text-decoration: none;
+        background-color: yellow;
+        margin-block: 0px;
+        padding: 0px;
+        border: #eaeaeb;
+       
+}
+
+
+.buscador .textito{
+    font-size:26px;
+    font-weight:900;/*Define el grosor de las letras */
+    color: black;
+    -webkit-text-stroke: 0.1px white;
+}
+.textoblack{
+    color: black;
+}
+
+/*Header*/
+.header{
+    background-image: url(../img/portadanew.jpg);
+    min-height:26rem;
+    background-size:cover;
+
+}
+.header .nav-link,
+.header .nav-link:hover{
+    color:white;
+}
+.header .btn-outline-light:hover{
+    color:black!important;
+}
+.buscador{
+    min-height:25rem;
+}
+.buscando  .btn-warning:hover{
+    background-color: rgb(175, 145, 9);
+}
+
+/*Categorias productos */
+.producto .card{
+    border: none;
+}
+
+.productos .card a {
+    color: #000000;
+}
+
+.productos .card a:hover{
+    text-decoration:none;
+}
+
+
+.productos .card h3{
+    color:rgb(199, 76, 31);
+    font-size:1.2rem;
+    font-family:'Lato',sans-serif;
+}
+
+.productos .card p{
+    font-size:.8rem;
+}
+
+.productos .card .precio{
+    font-size:1.6rem;
+    color: #979797;
+
+}
