@@ -1,0 +1,50 @@
+
+{% extends "secundario.html" %}
+
+ <!--Código de productos -->
+
+{% block container %}
+
+
+
+ <section class="productos container m-5">
+        <h2 class="encabezado text-center text-uppercase ">
+          <span class="text-uppercase d-block titulocategorias">{{titulo}}</span>
+        </h2>
+
+        <div class="row py-4">
+{% for producto in productos %}
+
+         <div class="col-md-4">
+            <div class="card">
+
+                {% if titulo == 'PRODUCTO' %}
+
+                <a href="">
+
+                {% else %}
+
+                <a href="{% url link id=producto.id %}">
+
+                 {% endif %}
+
+                <img class="card-img-top " src="{{producto.imagen.url}}">
+                 <div class="card-body"><!-- -->
+
+                   <h3 class="card-title text-center text-uppercase categoriasnew">{{producto.nombre}}</h3>
+                 </div><!-- card-body-->
+              </a>
+            </div><!-- -->
+          </div><!-- col-md-3-->
+
+{% endfor %}
+
+
+        </div><!--row py-5-->
+
+     </section>
+
+
+
+{% endblock %}
+
