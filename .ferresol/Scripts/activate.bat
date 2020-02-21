@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Angel\Desktop\Proyecto diseño ferreteria\proyecto\.ferresol
+set VIRTUAL_ENV=C:\Users\Minamura\Desktop\sitema de ferreteria\Ferresol\.ferresol
 
 if not defined PROMPT set PROMPT=$P$G
 
