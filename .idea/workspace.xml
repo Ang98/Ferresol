@@ -2,141 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82670f4f-6885-4a07-a1b3-836fed165f83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ferresol/static/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Adoquín 4 negro concretec.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Adoquín 6 negro concretec.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Barra de construcción SP 0.75 pulg. x 9 metros A615.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Canaleta Pluvial para techos 4 pulg  100mm 4M nicoll.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Carretilla Buggy 80 litros Llanta Rombo werken.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Carretilla Buggy Llanta Normal 5.5P3 80 litros SM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Cemento Apu Portland GU x 42.5 kg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Cinta de papel para drywall 5cm x 90 metros werken.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Cinta perforada de aluminio 25mm x 12 metros mathiensen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Columnas listas electrosoldadas 12 mm prodac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Comba octogonal 8 libras Mango 36 pulg truper.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Escalera Telescópica de fibra de vidrio 28 pasos stanley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Escalera Telescópica de fibra de vidrio Stanley 24 pasos stanley.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Estribos 6 mm x 18 x 12.5 cm aceros arequipa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Kingblock Grass 35 x 35 x 0.9 cm unicon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Ladrillo Hueco 12 Liso piramide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Ladrillo King Koncreto 13x9x22cm unicon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Ladrillo King Kong 18 huecos piramide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Ladrillo Pandereta Raya piramide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Ladrillo Pastelero piramide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Ladrillo para techo Hueco 8 piramide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Logonew.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Madera Pino Radiata 1.5 pulgX10 pulgX10.5 minipulg Grado comercial leonera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Madera Pino Radiata 2 pulg X3 pulgX8 minipulg Grado comercial leonera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Madera Pino Radiata 2 pulg x 4 pulg x 10.5mini pulg  Grado comercial leonera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Malla Electrosoldada Q-188 prodac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Martillo de construcción 29mm tramolina.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Pala para construcción con mango de madera 1.3kg werken.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Pala para construcción con mango de plástico 1.2kg SM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Parante 64x38x0.45mm x 3 metros metalcon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Parante 89x38x0.45mm x 3 metros metalcon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Pico Construcción 5 pulg Mango 90cm tramolina.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Placa de yeso Gyplac RH 12.7mm 1.22 x 2.44 metros gyplac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Riel 65x25x0.45mm x 3 metros metalcon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/TAB MELAMINA HUMO 18MM 7X8D SM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Tablero Melamina Natural Teca Ártico 18mm 2.15x2.44m Vesto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Tablero OSB 15.1 mm 1.22x2.44 metros SM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Tablero OSB 18.3 mm 1.22 x 2.44 metros SM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Tablero Plywood moldaje B CP 9mm 1.22x2.44 metros ARAUCOPLY.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Tablero de melamina Blanco 18 mm 7x8D SM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Techo Aluzinc Tr-4Xg 0.25mm 3.66x1.10m SM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Techo Opaco PP Rojo 1.1 mm 3.05x1.10 metros TECHITO.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Techo Teja Opaca PP Rojo 1.15 x 0.75 metros techito.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Techo traslucido 3 x 1.10 m x 0.9 mm Blanco techoplus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/agregados de construccion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/aislante termico de piso para acampar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/aislantes termicos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/app_apple.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/app_apple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/app_gp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/app_gp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/arena fina hades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/arena gruesa unicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/barras de construccion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/blog1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/blog2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/blog3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/carrito.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/carton corrugado 5kg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/categoria1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/categoria2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/categoria3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/cemento andino tipo 1 42.5 kg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/cemento pacasmayo extraforte 42.5 kg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/cemento pacasmayo fortimax 42.5 kg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/cemento sol tipo 1 42.5 kg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/cemento.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/cementos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/construccion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/espuma premiun golden film.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/fierro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/fierros.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/fvr_pro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/gafiteria.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/gasfiteria.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/hero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/herramientas de construccion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/hotmigon seco capa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/icono_av.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/icono_dev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/icono_dg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/icono_et.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/icono_ev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/icono_mkt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/icono_negocios.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/icono_vd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/inoodoro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/ladrillos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/legia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/limpieza.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/logotiponew.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/maderas y tableros.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/martillo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/nosotros.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/pernos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/poliestireno expandido 1 pulg 1.20 x 2.40 m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/porcelanato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/portadanew.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/principal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/producto1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/producto2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/producto3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/producto4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/producto5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/producto6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/retrete.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/rollo aislante termoacustico  5mm 1.5x6.7 metros.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/saco de gravilla la plataforma.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/servicio1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/servicio2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/servicio3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/servicio4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/servicio5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/sileta entrepiso ftp peru.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/sistema drywall.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/slide1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/techos planos y onduklados.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/tubos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/yeso ceramico hades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/img/Ángulo esquinero 30x30cm x 3 metros metalcon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/js/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/js/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/static/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/templates/categoria.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/templates/empresa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ferresol/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ferresol/administracion/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ferresol/administracion/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ferresol/ferresol/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ferresol/ferresol/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ferresol/ferresol/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ferresol/ferresol/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ferresol/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ferresol/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ferresol/templates/administracion/categoria.html" beforeDir="false" afterPath="$PROJECT_DIR$/ferresol/templates/administracion/categoria.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ferresol/templates/secundario.html" beforeDir="false" afterPath="$PROJECT_DIR$/ferresol/templates/secundario.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ferresol/ferresol/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="264">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding>
                 <element signature="e#1#33#0" expanded="true" />
               </folding>
@@ -167,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ferresol/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1038">
-              <caret line="154" column="29" lean-forward="true" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="45" />
+            <state relative-caret-position="2970">
+              <caret line="135" column="45" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -186,31 +55,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ferresol/ferresol/settings.py">
+        <entry file="file://$PROJECT_DIR$/ferresol/administracion/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ferresol/administracion/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="102">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ferresol/administracion/views.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ferresol/templates/secundario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="374">
+              <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ferresol/templates/administracion/categoria.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,21 +96,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ferresol/administracion/apps.py" />
-        <option value="$PROJECT_DIR$/ferresol/administracion/admin.py" />
         <option value="$PROJECT_DIR$/ferresol/administracion/models.py" />
         <option value="$PROJECT_DIR$/ferresol/template/index.html" />
         <option value="$PROJECT_DIR$/ferresol/ferresol/settings.py" />
-        <option value="$PROJECT_DIR$/ferresol/administracion/views.py" />
-        <option value="$PROJECT_DIR$/ferresol/ferresol/urls.py" />
+        <option value="$PROJECT_DIR$/ferresol/administracion/admin.py" />
         <option value="$PROJECT_DIR$/ferresol/templates/index.html" />
+        <option value="$PROJECT_DIR$/ferresol/ferresol/urls.py" />
+        <option value="$PROJECT_DIR$/ferresol/administracion/views.py" />
+        <option value="$PROJECT_DIR$/ferresol/templates/administracion/categoria.html" />
+        <option value="$PROJECT_DIR$/ferresol/templates/secundario.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="188" />
-    <option name="y" value="75" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1913" />
     <option name="width" value="1294" />
-    <option name="height" value="1038" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -246,7 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,33 +135,7 @@
               <item name="proyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="proyecto" type="462c0819:PsiDirectoryNode" />
               <item name="ferresol" type="462c0819:PsiDirectoryNode" />
-              <item name="administracion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="ferresol" type="462c0819:PsiDirectoryNode" />
-              <item name="ferresol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="ferresol" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="ferresol" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="ferresol" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proyecto" type="b2602c69:ProjectViewProjectNode" />
@@ -297,18 +143,27 @@
               <item name="ferresol" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="ferresol" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="administracion" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ferresol/media/administracion/imagenes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ferresol/templates/administracion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Angel\Desktop\Proyecto diseño ferreteria\proyecto\ferresol\templates\administracion" />
       <recent name="C:\Users\Angel\Desktop\Proyecto diseño ferreteria\proyecto\ferresol\media\administracion\imagenes" />
     </key>
   </component>
@@ -349,13 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582046259272</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="primera vista subida">
+      <created>1582051225650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582051225650</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="1912" y="-8" width="2576" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21437995" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09488189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -378,7 +241,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modelados django ferresol" />
     <MESSAGE value="requirements actualizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements actualizado" />
+    <MESSAGE value="primera vista subida" />
+    <option name="LAST_COMMIT_MESSAGE" value="primera vista subida" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/requierements.txt">
@@ -387,38 +251,11 @@
     <entry file="file://$PROJECT_DIR$/ferresol/administracion/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ferresol/administracion/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ferresol/administracion/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ferresol/template/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ferresol/administracion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ferresol/template/index.html" />
     <entry file="file://$PROJECT_DIR$/ferresol/administracion/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -432,10 +269,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ferresol/templates/categoria.html" />
+    <entry file="file://$PROJECT_DIR$/ferresol/administracion/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ferresol/ferresol/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="264">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding>
             <element signature="e#1#33#0" expanded="true" />
           </folding>
@@ -444,8 +289,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ferresol/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1038">
-          <caret line="154" column="29" lean-forward="true" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="45" />
+        <state relative-caret-position="2970">
+          <caret line="135" column="45" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ferresol/administracion/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ferresol/administracion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ferresol/templates/administracion/categoria.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ferresol/templates/secundario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
         </state>
       </provider>
     </entry>

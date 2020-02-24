@@ -16,24 +16,51 @@
 {% for producto in productos %}
 
          <div class="col-md-4">
-            <div class="card">
 
-                {% if titulo == 'PRODUCTO' %}
 
-                <a href="">
+                {% if titulo == 'PRODUCTOS' %}
 
                 {% else %}
-
                 <a href="{% url link id=producto.id %}">
+                {% endif %}
 
-                 {% endif %}
+                 <img class="card-img-top " src="{{producto.imagen.url}}">
+                </a>
 
-                <img class="card-img-top " src="{{producto.imagen.url}}">
-                 <div class="card-body"><!-- -->
-
-                   <h3 class="card-title text-center text-uppercase categoriasnew">{{producto.nombre}}</h3>
+                {% if titulo == 'PRODUCTOS' %}
+             <div class="card"  onmouseover="showSixneww()"  onmouseout="hiddenSix()">
+                <div class="card-body"><!-- -->
+                  <div class="row">
+                      <div class="col-9 text-left text-uppercase">Nombre:{{producto.nombre}}</div>
+                      <div class="col-3 text-rigth ">$ {{producto.precio}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-rigth text-uppercase">Stock: {{producto.stock}}</div>
+                      </div>
                  </div><!-- card-body-->
-              </a>
+
+                <div class="pt-2 text-center" id="mostrarOcultars" style="display: none; background-color:rgb(179, 63, 17)">
+                                <form name="ejemplo15" method="POST"  action="" target="_blank">
+                                    <input type="button" value="-" onClick="ejemplo15.cantidad.value-- ;
+                                    evaluarCantidad(this.form)">
+                                    <input type="text" name="cantidad" value="1" size="2" Readonly>
+                                    <input type="button" value="+" onClick="ejemplo15.cantidad.value++ ;
+                                    evaluarCantidad(this.form)">
+                                </form>
+                                <div class="py-3">
+                                    <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
+                                </div>
+                </div>
+
+                {% else %}
+              <div class="card">
+                <div class="card-body"><!-- -->
+                <h3 class="card-title text-center text-uppercase categoriasnew">{{producto.nombre}}</h3>
+                </div><!-- card-body-->
+                {% endif %}
+
+
+
             </div><!-- -->
           </div><!-- col-md-3-->
 

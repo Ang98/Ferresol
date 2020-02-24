@@ -113,3 +113,55 @@ h1,h2,h3{
     color: #979797;
 
 }
+
+
+/*Esto es para el carrito*/
+
+.menu{
+    width: 2.7rem;
+    height: 2.7rem;
+    background: blue;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 6rem;/*busco el top en el otro tambien para asi poder ubicarlo a la misma altura*/
+    right: 10%;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    transition: right 0.7s; 
+}
+
+/*para la animacion*/
+.checkbox:checked ~ .menu{
+    right:43%; /*Esto es para ubicar el carrito */
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.carro{
+width: 40px;
+height: 40px;
+}
+
+
+.left-panel{
+    width: 35%;
+    height: 100%;/*Esto es para que */
+    /*Estandar*/
+    background: rgb(223, 75, 7);
+    position: absolute;
+    top: 6rem;/*evita que se genere espacios innecesarios*/
+    right: -40%;
+    /*para posicionar los textos*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:right 0.4s;
+    z-index: 1;/*Esto es para poder encimar el div a lo que hubiera en la pantalla*/
+}
+
+.checkbox:checked ~ .left-panel{
+    right: 0;
+}
+
+.checkbox{
+display: none;
+}
