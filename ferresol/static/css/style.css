@@ -4,88 +4,206 @@
     --gris2: #eaeaeb;
     --gris3: #777777;
 }
-h1,h2,h3{
-    font-family:'Raleway',sans-serif;
-    font-weight:700!important;
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700!important;
 }
-.buscador .titulo{
+
+.buscador .titulo {
     font-weight: 600;
     -webkit-text-stroke: 2px black;
     color: white;
 }
 
-.categorianew{
-    color:rgb(199, 76, 31);
-    font-size:1.2rem;
-    font-family:'Lato',sans-serif;
+.categorianew {
+    color: rgb(199, 76, 31);
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
 }
 
-.vercategoria{
+.vercategoria {
     background-color: rgb(82, 4, 85);
     text-align: center;
     color: #eaeaeb;
 }
 
-.verempresa{
+.verempresa {
     background-color: aqua;
     text-align: center;
     color: rgb(4, 4, 68);
 }
 
-.logotipo{
-    width:80px;
-    height:80px;
-    left:0px;
+.logotipo {
+    width: 80px;
+    height: 80px;
+    left: 0px;
     margin: 0px;
-    border:none;
+    border: none;
 }
 
-.boton{
-        cursor: pointer;
-        height: 66px;
-        width: 136px;
-        text-decoration: none;
-        background-color: yellow;
-        margin-block: 0px;
-        padding: 0px;
-        border: #eaeaeb;
-       
+.boton {
+    cursor: pointer;
+    height: 66px;
+    width: 136px;
+    text-decoration: none;
+    background-color: yellow;
+    margin-block: 0px;
+    padding: 0px;
+    border: #eaeaeb;
 }
 
-
-.buscador .textito{
-    font-size:26px;
-    font-weight:900;/*Define el grosor de las letras */
+.buscador .textito {
+    font-size: 26px;
+    font-weight: 900;
+    /*Define el grosor de las letras */
     color: black;
     -webkit-text-stroke: 0.1px white;
 }
-.textoblack{
+
+.textoblack {
     color: black;
 }
 
-/*Header*/
-.header{
-    background-image: url(../img/portadanew.jpg);
-    min-height:26rem;
-    background-size:cover;
 
+/*Header*/
+
+.header {
+    background-image: url(../img/portadanew.jpg);
+    min-height: 26rem;
+    background-size: cover;
 }
+
 .header .nav-link,
-.header .nav-link:hover{
-    color:white;
+.header .nav-link:hover {
+    color: white;
 }
-.header .btn-outline-light:hover{
-    color:black!important;
+
+.header .btn-outline-light:hover {
+    color: black!important;
 }
-.buscador{
-    min-height:25rem;
+
+.buscador {
+    min-height: 25rem;
 }
-.buscando  .btn-warning:hover{
+
+.buscando .btn-warning:hover {
     background-color: rgb(175, 145, 9);
 }
 
+
 /*Categorias productos */
-.producto .card{
+
+.cProduc {
+    width: 250px;
+    height: 404.5px;
+    border-color: rgb(88, 105, 148);
+}
+
+.cnoProduc {
+    width: 350px;
+    height: 350px;
+}
+
+.cProducCuerpo {
+    background-color: rgb(88, 105, 148);
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px;
+}
+
+.cnoProducBody {
+    background-color: rgb(76, 159, 112);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cntPrecio {
+    background-color: #fff;
+    border-color: #fff;
+    padding: 0px;
+    color: rgb(88, 105, 148);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.configCantProduc {
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    color: rgb(88, 105, 148);
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    user-select: none;
+    box-shadow: 0 0 4px transparent;
+    transform: scale(1);
+    transition: all .3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imgnobox {
+    height: 100%;
+}
+
+.nobox {
+    width: 100%;
+    height: 66%;
+}
+
+.nobox img {
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    width: 100%;
+    height: 80%;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+@supports(object-fit: cover) {
+    .box img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .nobox img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.cartas {
+    float: left;
+    margin: 30px 15px;
+}
+
+.producto .card {
     border: none;
 }
 
@@ -93,75 +211,79 @@ h1,h2,h3{
     color: #000000;
 }
 
-.productos .card a:hover{
-    text-decoration:none;
+.productos .card a:hover {
+    text-decoration: none;
 }
 
-
-.productos .card h3{
-    color:rgb(199, 76, 31);
-    font-size:1.2rem;
-    font-family:'Lato',sans-serif;
+.productos .card p {
+    font-size: .8rem;
 }
 
-.productos .card p{
-    font-size:.8rem;
-}
-
-.productos .card .precio{
-    font-size:1.6rem;
+.productos .card .precio {
+    font-size: 1.6rem;
     color: #979797;
+}
 
+.cant-prod {
+    border-color: rgb(88, 105, 148);
+    text-align: center;
 }
 
 
 /*Esto es para el carrito*/
 
-.menu{
+.menu {
     width: 2.7rem;
     height: 2.7rem;
     background: blue;
     border-radius: 0.5rem;
     position: absolute;
-    top: 6rem;/*busco el top en el otro tambien para asi poder ubicarlo a la misma altura*/
+    top: 6rem;
+    /*busco el top en el otro tambien para asi poder ubicarlo a la misma altura*/
     right: 10%;
     font-family: sans-serif;
     color: white;
     text-align: center;
-    transition: right 0.7s; 
+    transition: right 0.7s;
 }
+
 
 /*para la animacion*/
-.checkbox:checked ~ .menu{
-    right:43%; /*Esto es para ubicar el carrito */
+
+.checkbox:checked~.menu {
+    right: 43%;
+    /*Esto es para ubicar el carrito */
     border-radius: 0 0.5rem 0.5rem 0;
 }
-.carro{
-width: 40px;
-height: 40px;
+
+.carro {
+    width: 40px;
+    height: 40px;
 }
 
-
-.left-panel{
+.left-panel {
     width: 35%;
-    height: 100%;/*Esto es para que */
+    height: 100%;
+    /*Esto es para que */
     /*Estandar*/
     background: rgb(223, 75, 7);
     position: absolute;
-    top: 6rem;/*evita que se genere espacios innecesarios*/
+    top: 6rem;
+    /*evita que se genere espacios innecesarios*/
     right: -40%;
     /*para posicionar los textos*/
     display: flex;
     align-items: center;
     justify-content: center;
-    transition:right 0.4s;
-    z-index: 1;/*Esto es para poder encimar el div a lo que hubiera en la pantalla*/
+    transition: right 0.4s;
+    z-index: 1;
+    /*Esto es para poder encimar el div a lo que hubiera en la pantalla*/
 }
 
-.checkbox:checked ~ .left-panel{
+.checkbox:checked~.left-panel {
     right: 0;
 }
 
-.checkbox{
-display: none;
+.checkbox {
+    display: none;
 }
