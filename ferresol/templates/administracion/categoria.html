@@ -1,77 +1,83 @@
+ {% extends "secundario.html" %}
 
-{% extends "secundario.html" %}
-
- <!--Código de productos -->
+<!--Código de productos -->
 
 {% block container %}
 
 
 
- <section class="productos container m-5">
+<section class="productos container-fluid m-5">
+    <div class="col-sm">
         <h2 class="encabezado text-center text-uppercase ">
-          <span class="text-uppercase d-block titulocategorias">{{titulo}}</span>
+            <span class="text-uppercase d-block titulocategorias">{{titulo}}</span>
         </h2>
 
-        <div class="row py-4">
-{% for producto in productos %}
+        {% for producto in productos %}
 
-         <div class="col-md-4">
-
-
-                {% if titulo == 'PRODUCTOS' %}
-
-                {% else %}
-                <a href="{% url link id=producto.id %}">
-                {% endif %}
-
-                 <img class="card-img-top " src="{{producto.imagen.url}}">
-                </a>
-
-                {% if titulo == 'PRODUCTOS' %}
-             <div class="card"  onmouseover="showSixneww()"  onmouseout="hiddenSix()">
-                <div class="card-body"><!-- -->
-                  <div class="row">
-                      <div class="col-9 text-left text-uppercase">Nombre:{{producto.nombre}}</div>
-                      <div class="col-3 text-rigth ">$ {{producto.precio}}</div>
+        <div class=" cartas">
+            {%if titulo == 'PRODUCTOS'%}
+            <div class="card cProduc ">
+                <div class="box">
+                    <img class="card-img-top" src="{{producto.imagen.url}}" alt="Card image cap">
+                </div>
+                <div class="card-body cProducCuerpo">
+                    <div class="row">
+                        <div class="col-sm-9 text-left">{{producto.nombre}}</div>
+                        <div class="col-sm-2 text-rigth  cntPrecio">${{producto.precio}}</div>
                     </div>
                     <div class="row">
                         <div class="col-6 text-rigth text-uppercase">Stock: {{producto.stock}}</div>
-                      </div>
-                 </div><!-- card-body-->
+                    </div>
 
-                <div class="pt-2 text-center" id="mostrarOcultars" style="display: none; background-color:rgb(179, 63, 17)">
-                                <form name="ejemplo15" method="POST"  action="" target="_blank">
-                                    <input type="button" value="-" onClick="ejemplo15.cantidad.value-- ;
-                                    evaluarCantidad(this.form)">
-                                    <input type="text" name="cantidad" value="1" size="2" Readonly>
-                                    <input type="button" value="+" onClick="ejemplo15.cantidad.value++ ;
-                                    evaluarCantidad(this.form)">
-                                </form>
-                                <div class="py-3">
-                                    <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
-                                </div>
+
+                    <div class="seleccionarProducto" id="mostrarOcultars">
+                        <form name="ejemplo15" method="POST" action="" target="_blank" style="display: inline-block;">
+                            <input class="configCantProduc" type="button" value="-" onClick="ejemplo15.cantidad.value-- ;
+                                        evaluarCantidad(this.form)">
+                            <input class="cant-prod" type="text" name="cantidad" value="1" size="2" Readonly>
+                            <input class="configCantProduc" type="button" value="+" onClick="ejemplo15.cantidad.value++ ;
+                                        evaluarCantidad(this.form)">
+                        </form>
+                        <div class="py-3 cant-prod" style="display: inline-block;">
+                            <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- div class="pt-2 text-center" id="mostrarOcultars" style="display: none; background-color:rgb(179, 63, 17)">
+                <form name="ejemplo15" method="POST" action="" target="_blank">
+                    <input type="button" value="-" onClick="ejemplo15.cantidad.value-- ;
+                    evaluarCantidad(this.form)">
+                    <input type="text" name="cantidad" value="1" size="2" Readonly>
+                    <input type="button" value="+" onClick="ejemplo15.cantidad.value++ ;
+                    evaluarCantidad(this.form)">
+                </form>
+                <div class="py-3">
+                    <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
+                </div>
+        </div> -->{% else %}
+            <a class="" href="{% url link id=producto.id %}">
+                <div class="card cnoProduc">
+                    <div class="nobox">
+                        <img class="card-img-top imgNobox" src="{{producto.imagen.url}}">
+                    </div>
+                    <div class="card-body cnoProducBody"> {{producto.nombre}} </div>
+                    <!-- card-body-->
+                </div>
+            </a>
 
-                {% else %}
-              <div class="card">
-                <div class="card-body"><!-- -->
-                <h3 class="card-title text-center text-uppercase categoriasnew">{{producto.nombre}}</h3>
-                </div><!-- card-body-->
-                {% endif %}
+            {% endif %}
+        </div>
+        {% endfor %}
+
+    </div>
 
 
 
-            </div><!-- -->
-          </div><!-- col-md-3-->
+    <!--row py-5-->
 
-{% endfor %}
-
-
-        </div><!--row py-5-->
-
-     </section>
+</section>
 
 
 
 {% endblock %}
-
