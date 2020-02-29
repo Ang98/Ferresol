@@ -14,12 +14,17 @@ class CotizacionAdmin(admin.ModelAdmin):
     list_display = ('id', 'costo_total', 'cantidad_productos')
     search_fields = ('id','cantidad_productos')
 
+@admin.register(Carro)
+class ProductoAdmin(admin.ModelAdmin):
+    list_display = ('id','id_producto','id_cotizacion','cantidad')
+    search_fields = ('id','id_producto')
+
 @admin.register(CuentaBancaria)
 class CuentaBancariaAdmin(admin.ModelAdmin):
-    list_display = ('id', 'saldo')
-    search_fields = ('id','saldo')
+    list_display = ('id','numero_tarjeta','cv','saldo','fecha_vencimiento')
+    search_fields = ('id','numero_tarjeta')
 
 @admin.register(OrdenDeCompra)
 class OrdenDeCompraAdmin(admin.ModelAdmin):
-    list_display = ('id', 'id_cuenta_bancaria', 'id_cotizacion', 'id_producto', 'nombre_recepcionista', 'fecha', 'direccion', 'distrito', 'provincia', 'departamento', 'nombre_comprador')
-    search_fields = ('id_cuenta_bancaria', 'id_cotizacion', 'id','id_producto')
+    list_display = ('id', 'id_cuenta_bancaria', 'id_cotizacion', 'nombre_recepcionista', 'fecha', 'direccion', 'distrito', 'provincia', 'departamento', 'nombre_comprador')
+    search_fields = ('id_cuenta_bancaria', 'id_cotizacion', 'id')

@@ -1,5 +1,5 @@
 from django.db import models
-#TRYU
+
 # Create your models here.
 
 class Producto(models.Model):
@@ -12,7 +12,7 @@ class Producto(models.Model):
     imagen = models.ImageField(upload_to='administracion/imagenes',blank=True,null=True)
 
     #atributos foraneos
-    id_producto = models.ForeignKey('self',on_delete=True,null=True,blank=True)
+    id_producto = models.ForeignKey('self',on_delete=models.CASCADE,null=True,blank=True)
 
     def __str__(self):
         return self.nombre
@@ -24,17 +24,29 @@ class Cotizacion(models.Model):
     cantidad_productos = models.IntegerField()
 
 
+class Carro(models.Model):
+    # atributos foraneos
+    id_producto = models.ForeignKey(Producto, on_delete=models.CASCADE, null=True, blank=True)
+    id_cotizacion = models.ForeignKey(Cotizacion, on_delete=models.CASCADE, null=True, blank=True)
+
+    # atributos propios
+    cantidad = models.IntegerField()
+
+
 class CuentaBancaria(models.Model):
 
     #atributos propios
     saldo = models.FloatField()
+    numero_tarjeta = models.CharField(max_length=16, blank= True , default='')
+    cv = models.IntegerField()
+    fecha_vencimiento = models.CharField(max_length=4,blank=True,default='')
+
 
 class OrdenDeCompra(models.Model):
 
     #atributos foraneos
     id_cuenta_bancaria= models.ForeignKey(CuentaBancaria, on_delete=models.CASCADE)
     id_cotizacion = models.ForeignKey(Cotizacion, on_delete=models.CASCADE)
-    id_producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
 
     #atributos propios
     nombre_recepcionista = models.CharField(max_length=45, blank=True, default='')
