@@ -12,6 +12,8 @@ urlpatterns = [
 
     path('principal/',admi_v.Principal,name='principal'),
 
+    path('prueba/',admi_v.Prueba,name='prueba'),
+
     path('categoria/',admi_v.CategoriaView,name='categoria'),
 
     path('subcategoria/<int:id>',admi_v.SubcategoriaView,name='subcategoria'),

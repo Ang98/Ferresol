@@ -1,9 +1,9 @@
-function ocultar(){
-    document.getElementById('mostrarOcultar').style.display="none";
+function ocultar() {
+    document.getElementById('mostrarOcultar').style.display = "none";
 }
 
-function mostrar(){
-    document.getElementById('mostrarOcultar').style.display="block";
+function mostrar() {
+    document.getElementById('mostrarOcultar').style.display = "block";
 
 }
 
@@ -15,68 +15,87 @@ function changeColor(obj) {
         obj.style.color = 'orange';
     }
 }
- 
+
 function changeBgColor(obj, colorName) {
     obj.style.backgroundColor = colorName;
 }
- 
+
 function changeText(obj, text) {
     obj.innerText = text;
 }
- 
+
 function scaleUp(obj, size) {
     obj.style.fontSize = size;
 }
- 
+
+
+function carrito(boton, id, stock) {
+    console.log(id);
+    if (boton.value == '+') {
+        document.getElementById(id).value++
+            if (document.getElementById(id).value >= stock) {
+                document.getElementById(id).value = stock
+            }
+    } else if (boton.value == '-') {
+        document.getElementById(id).value--
+            if (document.getElementById(id).value < 0) {
+                document.getElementById(id).value = 0
+            }
+    }
+
+
+}
+
+
 
 
 function showSixnew() {
     var element = document.getElementById("six");
-     
-    if(element.style.visibility == "collapse"){
+
+    if (element.style.visibility == "collapse") {
         //element.style.display = "block";
         element.style.visibility = "visible";
-    } else if(element.style.visibility == "visible"){
+    } else if (element.style.visibility == "visible") {
         //element.style.display = "none";
         element.style.visibility = "collapse";
-    }  else{
+    } else {
         element.style.visibility = "hidden";
-    }  
+    }
 }
 
 
 
-function hiddenSix(){
-    document.getElementById('mostrarOcultars').style.display="none";
+function hiddenSix() {
+    document.getElementById('mostrarOcultars').style.display = "none";
 }
 
-function showSixneww(){
-    document.getElementById('mostrarOcultars').style.display="block";
+function showSixneww() {
+    document.getElementById('mostrarOcultars').style.display = "block";
 }
 
 
 function showSix() {
     var element = document.getElementById("six");
 
-    if(element.style.visibility == "collapse"){
+    if (element.style.visibility == "collapse") {
         //element.style.display = "block";
         element.style.visibility = "visible";
-        document.getElementById('mostrarOcultars').style.display="block";
-    } else if(element.style.visibility == "visible"){
+        document.getElementById('mostrarOcultars').style.display = "block";
+    } else if (element.style.visibility == "visible") {
         //element.style.display = "none";
         element.style.visibility = "collapse";
-        document.getElementById('mostrarOcultars').style.display="none";
+        document.getElementById('mostrarOcultars').style.display = "none";
     }
 }
 
 
-function  evaluarCantidad(form){
-    if(form.cantidad.value<1){
-        form.cantidad.value=1;
+function evaluarCantidad(form) {
+    if (form.cantidad.value < 1) {
+        form.cantidad.value = 1;
         alert("solo se puede comprar minimo 1 producto")
     }
-    if(form.cantidad.value>5){
-        form.cantidad.value=5;
+    if (form.cantidad.value > 5) {
+        form.cantidad.value = 5;
         alert("la cantida maxima a comprar es de 5")
     }
 
@@ -85,116 +104,8 @@ function  evaluarCantidad(form){
 
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
-  }
-  
+}
+
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

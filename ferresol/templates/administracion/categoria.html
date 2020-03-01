@@ -6,45 +6,44 @@
 
 
 
-<section class="productos container-fluid m-5">
-    <div class="col-sm">
-        <h2 class="encabezado text-center text-uppercase ">
-            <span class="text-uppercase d-block titulocategorias">{{titulo}}</span>
-        </h2>
+<div class="col-sm">
+    <h2 class="encabezado text-center text-uppercase ">
+        <span class="text-uppercase d-block titulocategorias">{{titulo}}</span>
+    </h2>
 
-        {% for producto in productos %}
+    {% for producto in productos %}
 
-        <div class=" cartas">
-            {%if titulo == 'PRODUCTOS'%}
-            <div class="card cProduc ">
-                <div class="box">
-                    <img class="card-img-top" src="{{producto.imagen.url}}" alt="Card image cap">
+    <div class=" cartas">
+        {%if titulo == 'PRODUCTOS'%}
+        <div class="card cProduc ">
+            <div class="box">
+                <img class="card-img-top" src="{{producto.imagen.url}}" alt="Card image cap">
+            </div>
+            <div class="card-body cProducCuerpo">
+                <div class="row">
+                    <div class="col-sm-9 text-left">{{producto.nombre}}</div>
+                    <div class="col-sm-2 text-rigth  cntPrecio">${{producto.precio}}</div>
                 </div>
-                <div class="card-body cProducCuerpo">
-                    <div class="row">
-                        <div class="col-sm-9 text-left">{{producto.nombre}}</div>
-                        <div class="col-sm-2 text-rigth  cntPrecio">${{producto.precio}}</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 text-rigth text-uppercase">Stock: {{producto.stock}}</div>
-                    </div>
+                <div class="row">
+                    <div class="col-6 text-rigth text-uppercase">Stock: {{producto.stock}}</div>
+                </div>
 
 
-                    <div class="seleccionarProducto" id="mostrarOcultars">
-                        <form name="ejemplo15" method="POST" action="" target="_blank" style="display: inline-block;">
-                            <input class="configCantProduc" type="button" value="-" onClick="ejemplo15.cantidad.value-- ;
-                                        evaluarCantidad(this.form)">
-                            <input class="cant-prod" type="text" name="cantidad" value="1" size="2" Readonly>
-                            <input class="configCantProduc" type="button" value="+" onClick="ejemplo15.cantidad.value++ ;
-                                        evaluarCantidad(this.form)">
-                        </form>
-                        <div class="py-3 cant-prod" style="display: inline-block;">
-                            <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
-                        </div>
+                <div class="seleccionarProducto" id="mostrarOcultars">
+                    <form name="ejemplo15" method="POST" action="" target="_blank" style="display: inline-block;">
+                        <input type="hidden" value="{{producto.id}}">
+
+                        <input class="configCantProduc" type="button" id="-" value="-" onClick="carrito(this,{{producto.id}},{{producto.stock}})">
+                        <input class="cant-prod" type="text" name="cantidad" value="1" size="2" id='{{producto.id}}' }>
+                        <input class="configCantProduc" type="button" id="+" value="+" onClick="carrito(this,{{producto.id}},{{producto.stock}})">
+                    </form>
+                    <div class="py-3 cant-prod" style="display: inline-block;">
+                        <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
                     </div>
                 </div>
             </div>
-            <!-- div class="pt-2 text-center" id="mostrarOcultars" style="display: none; background-color:rgb(179, 63, 17)">
+        </div>
+        <!-- div class="pt-2 text-center" id="mostrarOcultars" style="display: none; background-color:rgb(179, 63, 17)">
                 <form name="ejemplo15" method="POST" action="" target="_blank">
                     <input type="button" value="-" onClick="ejemplo15.cantidad.value-- ;
                     evaluarCantidad(this.form)">
@@ -56,28 +55,25 @@
                     <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
                 </div>
         </div> -->{% else %}
-            <a class="" href="{% url link id=producto.id %}">
-                <div class="card cnoProduc">
-                    <div class="nobox">
-                        <img class="card-img-top imgNobox" src="{{producto.imagen.url}}">
-                    </div>
-                    <div class="card-body cnoProducBody"> {{producto.nombre}} </div>
-                    <!-- card-body-->
+        <a class="" href="{% url link id=producto.id %}">
+            <div class="card cnoProduc">
+                <div class="nobox">
+                    <img class="card-img-top imgNobox" src="{{producto.imagen.url}}">
                 </div>
-            </a>
+                <div class="card-body cnoProducBody"> {{producto.nombre}} </div>
+                <!-- card-body-->
+            </div>
+        </a>
 
-            {% endif %}
-        </div>
-        {% endfor %}
-
+        {% endif %}
     </div>
+    {% endfor %}
+
+</div>
 
 
 
-    <!--row py-5-->
-
-</section>
-
+<!--row py-5-->
 
 
 {% endblock %}

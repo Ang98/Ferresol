@@ -8,6 +8,11 @@ def Principal(request):
 
     return render(request,'index.html')
 
+def Prueba(request):
+
+    return render(request,'prueba.html')
+
+
 
 def CategoriaView(request):
 
