@@ -43,7 +43,7 @@ def SubcategoriaView(request,id):
 
 def ProductoView(request,id):
 
-    
+
     productos = Producto.objects.filter(id_producto=id)
     titulo = 'PRODUCTOS'
     padre = id
@@ -55,7 +55,7 @@ def ProductoView(request,id):
         id_p = request.POST['id_producto']
         cant = int(request.POST['cantidad'])
 
-        if request.session['cliente'] == None:
+        if not request.session.has_key('cliente'):
 
             pro = Producto.objects.get(id=id_p)
 
@@ -66,7 +66,7 @@ def ProductoView(request,id):
 
             coti2=Cotizacion.objects.last()
             request.session['cliente'] = coti2.pk
-            car = Carro(id_producto=pro,id_cotizacion= coti,cantidad=cant)
+            car = Carro(id_producto=pro,id_cotizacion= coti2,cantidad=cant)
 
 
             car.save()
