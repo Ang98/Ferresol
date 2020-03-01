@@ -86,7 +86,12 @@ def ProductoView(request,id):
             car = Carro(id_producto=pro,id_cotizacion= coti,cantidad=cant)
             car.save()
 
-        return redirect('principal')
+        return render(request,'administracion/categoria.html',context={
+                      'productos': productos,
+                      'titulo': titulo,
+                      'link': link,
+                      'padre': padre,
+                  })
 
     return render(request,
                   'administracion/categoria.html',
