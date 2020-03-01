@@ -24,6 +24,7 @@ class Cotizacion(models.Model):
     cantidad_productos = models.IntegerField()
 
 
+
 class Carro(models.Model):
     # atributos foraneos
     id_producto = models.ForeignKey(Producto, on_delete=models.CASCADE, null=True, blank=True)
