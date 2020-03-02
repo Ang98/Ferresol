@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ferrosol</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css'%} ">
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/realizarCompra.css' %} ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href=" {% static 'css/realizarPago.css' %} ">
+    <script src="{% static 'js/realizarPago.js' %}"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body onload="openRecepcion(event, 'SeleccionRecepcion')">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="">
+            <div>
+                <img class="logotipo" src="{% static 'img/Logonew.jpg' %}"> Ferresol
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'categoria'%}">Ver categoria <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Ver datos de la empresa <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <h2 class="encabezado text-center text-uppercase ">
+        <span class="text-uppercase d-block titulocategorias" style="margin: 40px 0px;">Realizar Pago</span>
+    </h2>
+    <div class="container-fluid" style="padding-top: 10px;">
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10">
+                <table class="table table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio Unitario</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <div>
+
+                    </div>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">p1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">p2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">p3</th>
+                            <td colspan="2"> Total </td>
+                            <td> $ </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="padding-top: 10px;">
+        <div class="row">
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-10">
+                <div class="row tab container">
+                    <div class="col-md-4" style="vertical-align:;">
+                        <button class="tablinks text-center" onclick="openCity(event, 'SeleccionRecepcion')">(1) Seleccion de Recepcion</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="tablinks" onclick="openCity(event, 'DatosRecepcionista')">(2) Datos del Recepcionista</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="tablinks" onclick="openCity(event, 'FormasPago')">(3) Formas de Pago</button>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-1">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div id="SeleccionRecepcion" class="tabcontent col-md-10">
+            <div class="container-fluid" style="padding-top: 10px;">
+                <div class="row">
+                    <div class="col-sm-1">
+
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row tab container">
+                            <div class="col-md-6">
+                                <button class="tablinks text-center" onclick="openRecepcion(event, 'RecepcionTienda')">Recepcion por Tienda</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="tablinks" onclick="openRecepcion(event, 'RecepcionDomicilio')">Recepcion por domicilio</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-1">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div id="DatosRecepcionista" class="tabcontent col-md-10">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6 px-4 py-3">
+                        <label for="inputEmail4">Apellidos</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Cabello">
+                    </div>
+                    <div class="form-group col-md-6 py-3 px-4">
+                        <label for="inputPassword4">Nombres</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Ronal Jairo">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6 px-4 pt-1">
+                        <label for="inputEmail4">Celular</label>
+                        <input type="tel" class="form-control" id="inputEmail4" placeholder="926169952">
+                    </div>
+
+                    <div class="col-md-4"></div>
+                    <!--Aqui va el boton  -->
+
+                    <div class="col-md-2 pt-4">
+
+                        <button type="submit" class="btn btn-primary" onclick="openCity(event, 'FormasPago')">Siguiente</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div id="Tokyo" class="tabcontent col-md-10">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div id="FormasPago" class="tabcontent col-md-10">
+            <div class="custom-control custom-switch" style="margin: 10px 0px; padding: 0px 30px;">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Tarjeta de credito</label>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Numero de la tarjeta</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="7542-3423-3423-2344">
+                </div>
+            </div>
+            <div class="container-fluid" style="padding-top: 10px;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-6 col-form-label col-form-label-sm">Fecha de vencimiento</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="05/25">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">CVV</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="XXX">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-6 col-form-label col-form-label-sm">cantidad de meses</label>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control form-control-sm" id="colFormLabelSm" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        openCity(evt, 'SeleccionRecepcion');
+        console.log(2)
+    </script>
+
+</body>
+
+</html>
