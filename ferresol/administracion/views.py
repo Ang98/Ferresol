@@ -17,6 +17,14 @@ def CategoriaView(request):
     productos = Producto.objects.filter(tipo = 'Categoria')
     titulo = 'CATEGORIAS'
     link = 'subcategoria'
+
+    if not request.session.has_key('cliente'):
+        pass
+        #carro = Carro.objects.filter(id= )
+
+    else:
+        pass
+
     return render(request,
                   'administracion/categoria.html',
                   context={
@@ -101,3 +109,18 @@ def ProductoView(request,id):
                       'link': link,
                       'padre': padre,
                   })
+
+
+
+
+def CarroProducto(request,id):
+
+    if not request.session.has_key('cliente'):
+        carro = Carro.objects.filter(id_cotizacion = id)
+    else:
+        carro = None
+
+
+    return carro
+
+
