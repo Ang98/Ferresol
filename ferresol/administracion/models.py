@@ -32,6 +32,7 @@ class Carro(models.Model):
 
     # atributos propios
     cantidad = models.IntegerField()
+    subtotal = models.IntegerField()
 
 
 class CuentaBancaria(models.Model):

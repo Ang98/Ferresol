@@ -12,6 +12,8 @@ def Prueba(request):
 
 def RealizarPago(request):
 
+
+
     return render(request,'realizarPago.html')
 
 def CategoriaView(request):
@@ -62,7 +64,7 @@ def ProductoView(request,id):
     titulo = 'PRODUCTOS'
     padre = id
     link = 'producto'
-    carros = CarroProducto(request)
+
 
     if request.method=='POST':
 
@@ -80,7 +82,7 @@ def ProductoView(request,id):
 
             coti2=Cotizacion.objects.last()
             request.session['cliente'] = coti2.pk
-            car = Carro(id_producto=pro,id_cotizacion= coti2,cantidad=cant)
+            car = Carro(id_producto=pro,id_cotizacion= coti2,cantidad=cant,subtotal= costo)
 
 
             car.save()
@@ -97,7 +99,7 @@ def ProductoView(request,id):
 
             coti.save()
 
-            car = Carro(id_producto=pro,id_cotizacion= coti,cantidad=cant)
+            car = Carro(id_producto=pro,id_cotizacion= coti,cantidad=cant,subtotal= costo)
             car.save()
 
         carros = CarroProducto(request)
