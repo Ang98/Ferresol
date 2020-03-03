@@ -6,11 +6,15 @@
 
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
-    {% for carro in carros%}
-    <div class="carro" style="color: white;">
-        {{carro.id_producto.nombre}}
-    </div>
-    {%endfor%}
+    <ol>
+        {% for carro in carros%}
+        <li class="carro" style="color: white;">
+            {{carro.id_producto.nombre}}
+        </li>
+        {%endfor%}
+        <button type="buttom" class=" btn bg-warning " onclick="{% url 'categoria' %}">Realizar Pago</button>
+    </ol>
+
 </div>
 <!-- /#sidebar-wrapper -->
 <!-- Page Content -->
