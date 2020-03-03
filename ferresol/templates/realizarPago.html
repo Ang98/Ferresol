@@ -83,7 +83,7 @@
                             <th scope="row">{{carro.id_producto.nombre}}</th>
                             <td>{{carro.cantidad}}</td>
                             <td>{{carro.id_producto.precio}}</td>
-                            <td>{{ carro.id_producto.precio*carro.cantidad }}</td>
+                            <td>{{ carro.subtotal }}</td>
                         </tr>
                     {% endfor %}
                     </tbody>
@@ -183,6 +183,10 @@
     </div>
 
 
+        <form method="POST" action="{% url 'realizarPago' %}">
+
+        {% csrf_token %}
+
     <div class="row">
         <div class="col-md-1"></div>
         <div id="Tokyo" class="tabcontent col-md-10">
@@ -201,7 +205,7 @@
             <div class="form-group row">
                 <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Numero de la tarjeta</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="7542-3423-3423-2344">
+                    <input type="text" name="nt" class="form-control form-control-sm" id="colFormLabelSm" placeholder="7542-3423-3423-2344">
                 </div>
             </div>
             <div class="container-fluid" style="padding-top: 10px;">
@@ -210,7 +214,7 @@
                         <div class="form-group row">
                             <label for="colFormLabelSm" class="col-sm-6 col-form-label col-form-label-sm">Fecha de vencimiento</label>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="05/25">
+                                <input type="text" name="fv" class="form-control form-control-sm" id="colFormLabelSm" placeholder="05/25">
                             </div>
                         </div>
                     </div>
@@ -218,7 +222,7 @@
                         <div class="form-group row">
                             <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">CVV</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="XXX">
+                                <input type="text" name="cv" class="form-control form-control-sm" id="colFormLabelSm" placeholder="XXX">
                             </div>
                         </div>
 
@@ -231,10 +235,21 @@
                             </div>
                         </div>
                     </div>
+
+                    <input type="submit" value="Enviar">
+
                 </div>
             </div>
         </div>
     </div>
+
+        </form>
+
+    {% if error%}
+
+    <p class="alert alert-danger">{{error}}</p>
+    {% endif%}
+
     <script>
         openCity(evt, 'SeleccionRecepcion');
         console.log(2)
