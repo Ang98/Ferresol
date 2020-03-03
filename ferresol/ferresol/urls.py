@@ -5,9 +5,11 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
+#from administracion import views as admi_v
 from administracion import views as admi_v
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
 
     path('principal/',admi_v.Principal,name='principal'),
