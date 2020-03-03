@@ -124,29 +124,146 @@
 
 
 
-
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div id="SeleccionRecepcion" class="tabcontent col-md-10">
-            <div class="container-fluid" style="padding-top: 10px;">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="row tab container">
-                            <div class="col-sm-6">
-                                <button class="tablinks text-center" onclick="openRecepcion(event, 'RecepcionTienda')">Recepcion por Tienda</button>
-                            </div>
-                            <div class="col-sm-6">
-                                <button class="tablinks" onclick="openRecepcion(event, 'RecepcionDomicilio')">Recepcion por domicilio</button>
+    <div onload="openRecepcion(event, 'RecepcionTienda')">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div id="SeleccionRecepcion" class="tabcontent col-md-10">
+                <div class="container-fluid" style="padding-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="row tab container">
+                                <div class="col-sm-6">
+                                    <button class="tablinks text-center" onclick="openRecepcion(event, 'RecepcionTienda')">Recepcion por Tienda</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="tablinks" onclick="openRecepcion(event, 'RecepcionDomicilio')">Recepcion por domicilio</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div id="RecepcionDomicilio" class="tabcontent col-md-10">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4 px-4 py-3">
+                        <label for="inputEmail4">Departamento</label>
+                        <select type="tag" class="form-control" id="inputEmail4" placeholder="Lima">
+                            <option value="volvo">Lima</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 py-3 px-4">
+                        <label for="inputPassword4">Provincia:</label>
+                        <select type="tag" class="form-control" id="inputPassword4" placeholder="Lima">
+                            <option value="volvo">Lima</option>   
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 py-3 px-4">
+                        <label for="inputPassword4">Distrito:</label>
+                        <select type="tag" class="form-control" id="inputPassword4" placeholder="Ate">
+                            <option value="volvo">ANCÓN</option>
+                            <option value="volvo">ATE</option>
+                            <option value="volvo">BARRANCO</option>
+                            <option value="volvo">BREÑA</option>
+                            <option value="volvo">CARABAYLLO</option>
+                            <option value="volvo">CHACLACAYO</option>
+                            <option value="volvo">CHORRILLOS</option>
+                            <option value="volvo">CIENEGUILLA</option>
+                            <option value="volvo">LIMA</option>
+                            <option value="volvo">LINCE</option>
+                            <option value="volvo">SAN BORJA</option>
+                            <option value="volvo">SAN ISIDRO</option>
+                            <option value="volvo">SAN MIGUEL</option>
+                            <option value="volvo">SANTA ANITA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6 px-4 pt-1">
+                        <label for="inputEmail4">Direccion</label>
+                        <input type="tel" class="form-control" id="inputEmail4" placeholder="Direccion del recepcionista">
+                    </div>
+
+                    <div class="col-md-4"></div>
+                    <!--Aqui va el boton  -->
+
+                    <div class="col-md-2 pt-4">
+
+                        <button type="submit" class="btn btn-primary" onclick="openCity(event, 'DatosRecepcionista')">Siguiente</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div id="RecepcionTienda" class="tabcontent col-md-10">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4 px-4 py-3">
+                        <label for="inputEmail4">Departamento</label>
+                        <select type="tag" class="form-control" id="inputEmail4" placeholder="Lima">
+                            <option value="volvo">Lima</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 py-3 px-4">
+                        <label for="inputPassword4">Provincia:</label>
+                        <select type="tag" class="form-control" id="inputPassword4" placeholder="Lima">
+                            <option value="volvo">Lima</option>   
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 py-3 px-4">
+                        <label for="inputPassword4">Distrito:</label>
+                        <select type="tag" class="form-control" id="inputPassword4" placeholder="Ate">
+                            <option value="volvo">ANCÓN</option>
+                            <option value="volvo">ATE</option>
+                            <option value="volvo">BARRANCO</option>
+                            <option value="volvo">BREÑA</option>
+                            <option value="volvo">CARABAYLLO</option>
+                            <option value="volvo">CHACLACAYO</option>
+                            <option value="volvo">CHORRILLOS</option>
+                            <option value="volvo">CIENEGUILLA</option>
+                            <option value="volvo">LIMA</option>
+                            <option value="volvo">LINCE</option>
+                            <option value="volvo">SAN BORJA</option>
+                            <option value="volvo">SAN ISIDRO</option>
+                            <option value="volvo">SAN MIGUEL</option>
+                            <option value="volvo">SANTA ANITA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6 px-4 pt-1">
+                        <label for="inputEmail4">Tienda</label>
+                        <select type="tag" class="form-control" id="inputPassword4">
+                            <option value="volvo">Tienda 1</option>
+                            <option value="volvo">Tienda 2</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4"></div>
+                    <!--Aqui va el boton  -->
+
+                    <div class="col-md-2 pt-4">
+
+                        <button type="submit" class="btn btn-primary" onclick="openCity(event, 'DatosRecepcionista')">Siguiente</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-md-1"></div>
@@ -183,67 +300,61 @@
     </div>
 
 
-        <form method="POST" action="{% url 'realizarPago' %}">
+    <form method="POST" action="{% url 'realizarPago' %}">
 
         {% csrf_token %}
 
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div id="Tokyo" class="tabcontent col-md-10">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div id="FormasPago" class="tabcontent col-md-10">
-            <div class="custom-control custom-switch" style="margin: 10px 0px; padding: 0px 30px;">
-                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                <label class="custom-control-label" for="customSwitch1">Tarjeta de credito</label>
-            </div>
-            <div class="form-group row">
-                <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Numero de la tarjeta</label>
-                <div class="col-sm-9">
-                    <input type="text" name="nt" class="form-control form-control-sm" id="colFormLabelSm" placeholder="7542-3423-3423-2344">
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div id="FormasPago" class="tabcontent col-md-10">
+                <div class="custom-control custom-switch" style="margin: 10px 0px; padding: 0px 30px;">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Tarjeta de credito</label>
                 </div>
-            </div>
-            <div class="container-fluid" style="padding-top: 10px;">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="form-group row">
-                            <label for="colFormLabelSm" class="col-sm-6 col-form-label col-form-label-sm">Fecha de vencimiento</label>
-                            <div class="col-sm-4">
-                                <input type="text" name="fv" class="form-control form-control-sm" id="colFormLabelSm" placeholder="05/25">
+                <div class="form-group row">
+                    <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Numero de la tarjeta</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="nt" class="form-control form-control-sm" id="colFormLabelSm" placeholder="7542-3423-3423-2344">
+                    </div>
+                </div>
+                <div class="container-fluid" style="padding-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group row">
+                                <label for="colFormLabelSm" class="col-sm-6 col-form-label col-form-label-sm">Fecha de vencimiento</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="fv" class="form-control form-control-sm" id="colFormLabelSm" placeholder="05/25">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="form-group row">
-                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">CVV</label>
-                            <div class="col-sm-6">
-                                <input type="text" name="cv" class="form-control form-control-sm" id="colFormLabelSm" placeholder="XXX">
+                        <div class="col-sm-3">
+                            <div class="form-group row">
+                                <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">CVV</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="cv" class="form-control form-control-sm" id="colFormLabelSm" placeholder="XXX">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group row">
+                                <label for="colFormLabelSm" class="col-sm-6 col-form-label col-form-label-sm">cantidad de meses</label>
+                                <div class="col-sm-6">
+                                    <input type="number" class="form-control form-control-sm" id="colFormLabelSm" placeholder="0">
+                                </div>
                             </div>
                         </div>
 
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="form-group row">
-                            <label for="colFormLabelSm" class="col-sm-6 col-form-label col-form-label-sm">cantidad de meses</label>
-                            <div class="col-sm-6">
-                                <input type="number" class="form-control form-control-sm" id="colFormLabelSm" placeholder="0">
-                            </div>
-                        </div>
-                    </div>
+                        <input type="submit" value="Enviar">
 
-                    <input type="submit" value="Enviar">
-
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-        </form>
+    </form>
 
     {% if error%}
 

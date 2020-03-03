@@ -8,13 +8,33 @@
 {%if titulo == 'PRODUCTOS'%}
 <div id="wrapper" class="">
     <div id="sidebar-wrapper">
-        <ol>
+        <ol style=" margin-left: -15px;">
             {% for carro in carros%}
-            <li class="carro" style="color: white;">
-                {{carro.id_producto.nombre}}
+            <li style="color: white;  display: inline; ">
+                <div class="margen_carro_unico">
+                    <a href="" class="carro_unico">
+                        <div class="elementos_producto">
+                            {{carro.id_producto.nombre}}
+                        </div>
+                        <div class="elementos_producto">
+                            cantidad: {{carro.cantidad}}
+                        </div>
+                        <div class="elementos_producto">
+                            costo unit.: $ {{carro.id_producto.precio}}
+                        </div>
+                        <div class="elementos_producto">
+                            subtotal: $ {{carro.subtotal}}
+
+                        </div>
+                    </a>
+                </div>
+
+
+
             </li>
             {%endfor%}
-            <button type="buttom" class=" btn bg-warning " onclick="{% url 'categoria' %}">Realizar Pago</button>
+
+            <a class=" btn bg-warning " href="{% url 'realizarPago' %}">Realizar Pago</a>
         </ol>
 
     </div>
