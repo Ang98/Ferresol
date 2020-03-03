@@ -137,4 +137,14 @@ def CarroProducto(request):
 
     return carro
 
+def VerificarUsuario(nt,cv,fv):
+
+
+    try:
+        car = CuentaBancaria.objects.get(numero_tarjeta=nt,cv=cv,fecha_vencimiento=fv)
+        valor =True
+    except CuentaBancaria.DoesNotExist:
+        valor = False
+
+    return valor
 
