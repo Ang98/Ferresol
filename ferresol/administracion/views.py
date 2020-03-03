@@ -19,7 +19,7 @@ def CategoriaView(request):
     productos = Producto.objects.filter(tipo = 'Categoria')
     titulo = 'CATEGORIAS'
     link = 'subcategoria'
-    carros = CarroProducto(request,request.session['cliente'])
+    carros = CarroProducto(request)
 
     if not request.session.has_key('cliente'):
         pass
@@ -44,7 +44,7 @@ def SubcategoriaView(request,id):
     productos = Producto.objects.filter(id_producto = id)
     titulo = 'SUBCATEGORIAS'
     link = 'producto'
-    carros = CarroProducto(request,request.session['cliente'])
+    carros = CarroProducto(request)
 
     return render(request,
                   'administracion/categoria.html',
@@ -62,7 +62,7 @@ def ProductoView(request,id):
     titulo = 'PRODUCTOS'
     padre = id
     link = 'producto'
-    carros = CarroProducto(request,request.session['cliente'])
+    carros = CarroProducto(request)
 
     if request.method=='POST':
 
@@ -100,6 +100,7 @@ def ProductoView(request,id):
             car = Carro(id_producto=pro,id_cotizacion= coti,cantidad=cant)
             car.save()
 
+        carros = CarroProducto(request)
         return render(request,'administracion/categoria.html',context={
                       'productos': productos,
                       'titulo': titulo,
@@ -108,7 +109,7 @@ def ProductoView(request,id):
                       'carros':carros,
 
                   })
-
+    carros = CarroProducto(request)
     return render(request,
                   'administracion/categoria.html',
                   context={
@@ -122,10 +123,10 @@ def ProductoView(request,id):
 
 
 
-def CarroProducto(request,id):
+def CarroProducto(request):
 
-    if not request.session.has_key('cliente'):
-        carro = Carro.objects.filter(id_cotizacion = id)
+    if request.session.has_key('cliente'):
+        carro = Carro.objects.filter(id_cotizacion = request.session['cliente'])
     else:
         carro = []
 
