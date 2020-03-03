@@ -39,20 +39,19 @@
 
 
                     <div class="seleccionarProducto" id="mostrarOcultars">
-                        <form name="ejemplo15" method="POST" action="{%url link id=padre%}" enctype="multipart/form-data" target="_blank" style="display: inline-block;">
+                        <form name="ejemplo15" method="POST" action="{%url link id=padre%}" enctype="multipart/form-data" target="_self" style="display: inline-block;">
 
                             {% csrf_token %}
-
                             <input type="hidden" value="{{producto.id}}" name="id_producto">
-
                             <input class="configCantProduc" type="button" id="-" value="-" onClick="carrito(this,{{producto.id}},{{producto.stock}})">
                             <input class="cant-prod" type="text" name="cantidad" value="1" size="2" id='{{producto.id}}' }>
                             <input class="configCantProduc" type="button" id="+" value="+" onClick="carrito(this,{{producto.id}},{{producto.stock}})">
-
                             <div class="py-3 cant-prod" style="display: inline-block;">
                                 <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
                             </div>
                         </form>
+
+
 
                     </div>
                 </div>

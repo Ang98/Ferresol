@@ -17,6 +17,7 @@ def CategoriaView(request):
     productos = Producto.objects.filter(tipo = 'Categoria')
     titulo = 'CATEGORIAS'
     link = 'subcategoria'
+    carros = CarroProducto(request,request.session['cliente'])
 
     if not request.session.has_key('cliente'):
         pass
@@ -31,6 +32,7 @@ def CategoriaView(request):
                       'productos':productos,
                       'titulo':titulo,
                       'link':link,
+                      'carros':carros,
                   })
 
 
@@ -40,6 +42,7 @@ def SubcategoriaView(request,id):
     productos = Producto.objects.filter(id_producto = id)
     titulo = 'SUBCATEGORIAS'
     link = 'producto'
+    carros = CarroProducto(request,request.session['cliente'])
 
     return render(request,
                   'administracion/categoria.html',
@@ -47,6 +50,7 @@ def SubcategoriaView(request,id):
                       'productos': productos,
                       'titulo': titulo,
                       'link': link,
+                      'carros':carros,
                   })
 
 def ProductoView(request,id):
@@ -56,7 +60,7 @@ def ProductoView(request,id):
     titulo = 'PRODUCTOS'
     padre = id
     link = 'producto'
-
+    carros = CarroProducto(request,request.session['cliente'])
 
     if request.method=='POST':
 
@@ -99,6 +103,8 @@ def ProductoView(request,id):
                       'titulo': titulo,
                       'link': link,
                       'padre': padre,
+                      'carros':carros,
+
                   })
 
     return render(request,
@@ -108,7 +114,8 @@ def ProductoView(request,id):
                       'titulo': titulo,
                       'link': link,
                       'padre': padre,
-                  })
+                      'carros':carros,
+                })
 
 
 
@@ -118,7 +125,7 @@ def CarroProducto(request,id):
     if not request.session.has_key('cliente'):
         carro = Carro.objects.filter(id_cotizacion = id)
     else:
-        carro = None
+        carro = []
 
 
     return carro
