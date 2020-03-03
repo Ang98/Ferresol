@@ -10,7 +10,9 @@ def Prueba(request):
 
     return render(request,'prueba.html')
 
+def RealizarPago(request):
 
+    return render(request,'realizarPago.html')
 
 def CategoriaView(request):
 

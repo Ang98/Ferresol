@@ -15,6 +15,10 @@ urlpatterns = [
     path('prueba/',admi_v.Prueba,name='prueba'),
 
     path('categoria/',admi_v.CategoriaView,name='categoria'),
+    
+    
+    path('realizarPago/',admi_v.RealizarPago,name='realizarPago'),
+
 
     path('subcategoria/<int:id>',admi_v.SubcategoriaView,name='subcategoria'),
 
