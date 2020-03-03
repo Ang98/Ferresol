@@ -38,7 +38,7 @@
                     <a class="nav-link" href="{% url 'categoria'%}">Ver categoria <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Ver datos de la empresa <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'datosEmpresa'%}">Ver datos de la empresa <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -55,7 +55,13 @@
     <!-- Carousel   Carousel Slider-->
 
 
-
+    <section class="nuevo-sitio py-2">
+        <h1 class="text-center text-uppercase" style="font-size: 48px;margin-top: 30px;margin-bottom: 30px;">
+            <span class="text-uppercase d-block">Bienvenido a nuestro sitio Web</span>
+        </h1>
+        <p class="text-center  " style="margin-top: 5px; margin-bottom: 5px;">Nuestra ferreteria ferresol cuenta con productos de calidad, pues ese es</p>
+        <p class="text-center " style="margin-top: 5px; margin-bottom: 5px;">el compromiso con nuestros clientes</p>
+    </section>
 
     <div class="container">
         <!-- #slider-principal.carousel.slider-->
@@ -73,7 +79,7 @@
 
 
             <!-- En esta sección con el data-ride="carousel" se activa los script de javaScript-->
-            <div class="carusel-inner" role="listbox">
+            <div class="carusel-inner" style="margin-bottom:40px;" role="listbox">
 
                 <div class="carousel-item active text-center">
                     <img src="{%static 'img/porcelanato.jpg'%}" alt="Modelo de Pisos">
@@ -137,36 +143,6 @@
 
 
     <!-- Esto es para escribir el pequeño texto que esta en la página-->
-
-    <section class="nuevo-sitio py-2">
-        <h1 class="text-center text-uppercase">
-            <span class="text-uppercase d-block">Bienvenido a nuestro</span>Sitio Web
-        </h1>
-        <p class="text-center mt-4">Nuestra ferreteria ferresol cuenta con productos de calidad ,pues ese es el compromiso con nuestros clientes
-        </p>
-    </section>
-
-
-
-    <div class="container productos-tienda  mt-1">
-        <div class="row mt-1 ">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <div class="info-producto  text-light text-center p-4">
-                    <a href="{% url 'categoria' %}" class="btn vercategoria d-block btn-lg text-uppercase font-weight-bold">Ver Categoria</a>
-                    <!--d-block btn-lg juegan con el tamaño del boton -->
-                </div>
-            </div>
-
-            <div class="col-md-6 mb-4 mb-md-0">
-                <div class="info-producto  text-light text-center p-4">
-                    <a href="empresa.html" class="btn verempresa d-block btn-lg text-uppercase font-weight-bold ">Ver Datos de la Empresa</a>
-                    <!--d-block btn-lg juegan con el tamaño del boton -->
-                </div>
-            </div>
-
-        </div>
-        <!--Cierre del row -->
-    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

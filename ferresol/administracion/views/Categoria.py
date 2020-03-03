@@ -1,6 +1,11 @@
 from django.shortcuts import render, redirect
 from ..models import *
 
+
+def DatosEmpresa(request):
+
+    return render(request,'datosEmpresa.html')
+
 def CategoriaView(request):
 
     productos = Producto.objects.filter(tipo = 'Categoria')
