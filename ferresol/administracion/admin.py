@@ -16,7 +16,7 @@ class CotizacionAdmin(admin.ModelAdmin):
 
 @admin.register(Carro)
 class ProductoAdmin(admin.ModelAdmin):
-    list_display = ('id','id_producto','id_cotizacion','cantidad')
+    list_display = ('id','id_producto','id_cotizacion','cantidad','subtotal')
     search_fields = ('id','id_producto')
 
 @admin.register(CuentaBancaria)

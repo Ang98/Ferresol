@@ -64,6 +64,7 @@
             <div class="col-sm-10">
                 <table class="table table-hover table-dark">
                     <thead>
+
                         <tr>
                             <th scope="col">Producto</th>
                             <th scope="col">Cantidad</th>
@@ -76,24 +77,15 @@
                     </div>
                     <tbody>
 
-                        <tr>
-                            <th scope="row">p1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">p2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
+                    {% for carro in carros %}
 
                         <tr>
-                            <th scope="row">p3</th>
-                            <td colspan="2"> Total </td>
-                            <td> $ </td>
+                            <th scope="row">{{carro.id_producto.nombre}}</th>
+                            <td>{{carro.cantidad}}</td>
+                            <td>{{carro.id_producto.precio}}</td>
+                            <td>{{ carro.id_producto.precio*carro.cantidad }}</td>
                         </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
             </div>
