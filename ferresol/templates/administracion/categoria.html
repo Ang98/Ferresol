@@ -5,85 +5,91 @@
 {% block container %}
 
 <!-- Sidebar -->
-<div id="sidebar-wrapper">
-    <ol>
-        {% for carro in carros%}
-        <li class="carro" style="color: white;">
-            {{carro.id_producto.nombre}}
-        </li>
-        {%endfor%}
-        <button type="buttom" class=" btn bg-warning " onclick="{% url 'categoria' %}">Realizar Pago</button>
-    </ol>
-
-</div>
-<!-- /#sidebar-wrapper -->
-<!-- Page Content -->
-<div class="productos container-fluid" id="page-content-wrapper">
-    <div class="col-sm">
-        <h2 class="encabezado text-center text-uppercase ">
-            <span class="text-uppercase d-block titulocategorias">{{titulo}}</span>
-        </h2>
-
-        {% for producto in productos %}
-
-        <div class=" cartas">
-            {%if titulo == 'PRODUCTOS'%}
-            <div class="card cProduc ">
-                <div class="box">
-                    <img class="card-img-top" src="{{producto.imagen.url}}" alt="Card image cap">
-                </div>
-                <div class="card-body cProducCuerpo">
-                    <div class="row">
-                        <div class="col-sm-9 text-left">{{producto.nombre}}</div>
-                        <div class="col-sm-2 text-rigth  cntPrecio">${{producto.precio}}</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 text-rigth text-uppercase">Stock: {{producto.stock}}</div>
-                    </div>
-
-
-                    <div class="seleccionarProducto" id="mostrarOcultars">
-                        <form name="ejemplo15" method="POST" action="{%url link id=padre%}" enctype="multipart/form-data" target="_self" style="display: inline-block;">
-
-                            {% csrf_token %}
-                            <input type="hidden" value="{{producto.id}}" name="id_producto">
-                            <input class="configCantProduc" type="button" id="-" value="-" onClick="carrito(this,{{producto.id}},{{producto.stock}})">
-                            <input class="cant-prod" type="text" name="cantidad" value="1" size="2" id='{{producto.id}}' }>
-                            <input class="configCantProduc" type="button" id="+" value="+" onClick="carrito(this,{{producto.id}},{{producto.stock}})">
-                            <div class="py-3 cant-prod" style="display: inline-block;">
-                                <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
-                            </div>
-                        </form>
-
-
-
-                    </div>
-                </div>
-            </div>
-
-            {% else %}
-            <a class="" href="{% url link id=producto.id %}">
-                <div class="card cnoProduc">
-                    <div class="nobox">
-                        <img class="card-img-top imgNobox" src="{{producto.imagen.url}}">
-                    </div>
-                    <div class="card-body cnoProducBody"> {{producto.nombre}} </div>
-                    <!-- card-body-->
-                </div>
-            </a>
-
-            {% endif %}
-        </div>
-        {% endfor %}
+{%if titulo == 'PRODUCTOS'%}
+<div id="wrapper" class="">
+    <div id="sidebar-wrapper">
+        <ol>
+            {% for carro in carros%}
+            <li class="carro" style="color: white;">
+                {{carro.id_producto.nombre}}
+            </li>
+            {%endfor%}
+            <button type="buttom" class=" btn bg-warning " onclick="{% url 'categoria' %}">Realizar Pago</button>
+        </ol>
 
     </div>
+
+    {% endif %}
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div class="productos container-fluid" id="page-content-wrapper">
+        <div class="col-sm">
+            <h2 class="encabezado text-center text-uppercase ">
+                <span class="text-uppercase d-block titulocategorias">{{titulo}}</span>
+            </h2>
+
+            {% for producto in productos %}
+
+            <div class=" cartas">
+                {%if titulo == 'PRODUCTOS'%}
+                <div class="card cProduc ">
+                    <div class="box">
+                        <img class="card-img-top" src="{{producto.imagen.url}}" alt="Card image cap">
+                    </div>
+                    <div class="card-body cProducCuerpo">
+                        <div class="row">
+                            <div class="col-sm-9 text-left">{{producto.nombre}}</div>
+                            <div class="col-sm-2 text-rigth  cntPrecio">${{producto.precio}}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-rigth text-uppercase">Stock: {{producto.stock}}</div>
+                        </div>
+
+
+                        <div class="seleccionarProducto" id="mostrarOcultars">
+                            <form name="ejemplo15" method="POST" action="{%url link id=padre%}" enctype="multipart/form-data" target="_self" style="display: inline-block;">
+
+                                {% csrf_token %}
+                                <input type="hidden" value="{{producto.id}}" name="id_producto">
+                                <input class="configCantProduc" type="button" id="-" value="-" onClick="carrito(this,{{producto.id}},{{producto.stock}})">
+                                <input class="cant-prod" type="text" name="cantidad" value="1" size="2" id='{{producto.id}}' }>
+                                <input class="configCantProduc" type="button" id="+" value="+" onClick="carrito(this,{{producto.id}},{{producto.stock}})">
+                                <div class="py-3 cant-prod" style="display: inline-block;">
+                                    <button type="buttom" class=" btn bg-warning">Añadir Carrito</button>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                {% else %}
+                <a class="" href="{% url link id=producto.id %}">
+                    <div class="card cnoProduc">
+                        <div class="nobox">
+                            <img class="card-img-top imgNobox" src="{{producto.imagen.url}}">
+                        </div>
+                        <div class="card-body cnoProducBody"> {{producto.nombre}} </div>
+                        <!-- card-body-->
+                    </div>
+                </a>
+
+                {% endif %}
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--row py-5-->
+
 </div>
-
-
-
-
-
-<!--row py-5-->
 
 
 {% endblock %}

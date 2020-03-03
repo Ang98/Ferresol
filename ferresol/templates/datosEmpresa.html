@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ferrosol</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/realizarPago.css' %}">
+    <!--Incluye un estilo  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css'%} ">
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <!-- Aquí empieza el navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'principal'%}">
+            <div>
+                <img class="logotipo" src="{% static 'img/Logonew.jpg' %}"> Ferresol
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'categoria'%}">Ver categoria <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'datosEmpresa'%}">Ver datos de la empresa <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+    <!--Aqui termina el navbar  -->
+
+
+    <!-- Aqui empieza el main section -->
+    <div class="main_section">
+
+        <h1>
+            NOSOTROS
+        </h1>
+
+    </div>
+    <!-- Aqui termina el main section -->
+    <div class="nosotros">
+        <div class="imagennosotros">
+            <img src="Images/nosotros.png" alt="">
+        </div>
+
+        <div class="textnosotros">
+            Somos Ferresol, una tienda con todo lo que necesitas para mejorar tu casa: Materiales de construcción, acabados, organización, decoración, herramientas, muebles e iluminación. Llegamos para acompañarte en el proceso de tener el hogar soñado, con un servicio
+            experto y amable, a través de la entrega de productos y servicios de excelente calidad y con los mejores precios.
+
+        </div>
+    </div>
+
+    <div class="descripciones">
+
+        <div class="descripcion">
+            <div class="imgdescripcion">
+                <img src="Images/mision.jpg" alt="">
+            </div>
+            <div class="textdescripcion">
+                Somos una empresa que trabaja con el mayor cuidado y dedicación para ofrecer productos y servicios de calidad. Lo cual permite, como empresa, crecer cada día.
+            </div>
+        </div>
+
+        <div class="descripcion">
+            <div class="imgdescripcion">
+                <img src="Images/vision.jpg" alt="">
+            </div>
+            <div class="textdescripcion">
+                Ser una Empresa reconocida a nivel de Lima, ofreciendo una diversidad de materiales de construcción, reparación, gasfitería, variedad de tornillos, repuestos, entre otros, manteniendo su calidad ; además contaremos con un sistema que nos permita automatizar
+                nuestros procesos de administración de venta, control de inventario y abastecimientos de productos.
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

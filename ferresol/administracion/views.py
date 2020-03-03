@@ -12,9 +12,11 @@ def Prueba(request):
 
 def RealizarPago(request):
 
-
-
     return render(request,'realizarPago.html')
+
+def DatosEmpresa(request):
+
+    return render(request,'datosEmpresa.html')
 
 def CategoriaView(request):
 

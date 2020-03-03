@@ -19,6 +19,7 @@ urlpatterns = [
     
     path('realizarPago/',admi_v.RealizarPago,name='realizarPago'),
 
+    path('datosEmpresa/',admi_v.DatosEmpresa,name='datosEmpresa'),
 
     path('subcategoria/<int:id>',admi_v.SubcategoriaView,name='subcategoria'),
 
